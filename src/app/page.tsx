@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import Image from "next/image";
 
 interface Brand {
   id: string;
@@ -37,9 +36,9 @@ export default function HomePage() {
   }, [selectedBrand]);
 
   return (
-    <div className="container mx-auto px-4 py-8 bg-primary-color rounded-lg">
+    <div className="container mx-auto px-4 py-8 bg-primary rounded-lg shadow-lg">
       <h1 className="text-2xl font-bold mb-6">Пошук автомобілів</h1>
-      <form>
+      <form className="bg-white p-6 rounded-lg shadow-sm">
         <div className="flex gap-4 flex-wrap">
           <select
             name="brand"
